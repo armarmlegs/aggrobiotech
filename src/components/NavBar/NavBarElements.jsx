@@ -2,25 +2,30 @@ import styled from 'styled-components'
 import {Link as LinkR} from 'react-router-dom'
 import {Link as LinkS} from 'react-scroll'
 export const Nav = styled.nav`
-background: #000;
+background:${({scrollNav}) =>(scrollNav ? 'transparent' : 'black')};
  height:80px,;
-margin-top:-20x;
+margin-top:-20px;
 display:flex;
 justify-content:center;
 align-items:center;
 font-size:1rem;
-position:sticky;
+position:sticky{
+    position:fixed;
+    top:0;
+    width:100%
+};
 top:0;
 z-index:10;
 
 @media screen and (max-width:960px){
     transition:0.8S all ease;
-}`
+}
+`
 
 export const NavbarContainer = styled.div`
 display:flex;
 justify-content:space-between;
-height:80px;
+height:60px;
 z-index:1;
 width:100%;
 padding: 0 24px;
