@@ -98,6 +98,7 @@ export const NavLinks = styled(LinkS)`
 
 export const NavRoute = styled(LinkR)`
    /* color: ${({ scrollNav }) => (scrollNav ? "#fff" : "#000")}; */
+   color:black;
   display: flex;
   align-items: center;
   text-decoration: none;
