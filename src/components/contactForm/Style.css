@@ -1,0 +1,35 @@
+.contact-form{
+    width: 31.25rem;
+    position: relative;
+    margin-top: 2rem;
+    padding: 1rem 0;
+
+}
+
+
+label{
+    text-transform: uppercase;
+    display: block;
+    padding: 20px 0;
+    font-size: 15px;
+    margin-bottom: 2px;
+};
+
+input{
+    font-weight: 500;
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+  font-size: 18px;
+}
+
+.contact-area{
+    font-weight: 500;
+    width: 600px;
+  
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    font-size: 18px;
+    resize: none;
+}

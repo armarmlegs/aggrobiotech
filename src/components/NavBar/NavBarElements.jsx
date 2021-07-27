@@ -1,103 +1,115 @@
-import styled from 'styled-components'
-import {Link as LinkR} from 'react-router-dom'
-import {Link as LinkS} from 'react-scroll'
+import styled from "styled-components";
+import { Link as LinkR } from "react-router-dom";
+import { Link as LinkS } from "react-scroll";
 export const Nav = styled.nav`
-background:${({scrollNav}) =>(scrollNav ? 'transparent' : 'black')};
- height:80px,;
-margin-top:-20px;
-display:flex;
-justify-content:center;
-align-items:center;
-font-size:1rem;
-position:sticky{
-    position:fixed;
-    top:0;
-    width:100%
-};
-top:0;
-z-index:10;
+  background: ${({ scrollNav }) => (scrollNav ? "#000" : "#fff")};
+  color:${({ scrollNav }) => (scrollNav ? "#fff" : "#fff")};
+  opacity: 0.9;
+  height: 70px;
+  margin-top:0px;
+  position:fixed;
+  top:0;
+  left:0;
+  
+  z-index: 10;
+  font-size: 20px;
+  width: 100%;
 
-@media screen and (max-width:960px){
-    transition:0.8S all ease;
-}
-`
+  @media screen and (max-width: 960px) {
+    transition: 0.8s all ease;
+  }
+
+  
+`;
 
 export const NavbarContainer = styled.div`
-display:flex;
-justify-content:space-between;
-height:60px;
-z-index:1;
-width:100%;
-padding: 0 24px;
-max-width:1100px
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  z-index: 1;
+  /* width: 100%; */
+  padding: 0 24px;
+  padding-right: 0;
+  max-width: 1100px;
  
- `
+`;
 
-
- export const NavLogo = styled(LinkR)`
- color:#fff;
- justify-self:flex-start;
- cursor: pointer;
- font-size: 1.5rem;
- display:flex;
- align-items:center;
- margin-left:24px;
- font-weight:bold;
- text-decoration:none
-
- `
-
+export const NavLogo = styled(LinkR)`
+  color:black;
+  justify-self: flex-start;
+  cursor: pointer;
+  font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+  margin-left: 24px;
+  font-weight: bold;
+  text-decoration: none;
+`;
 
 export const MobileIcon = styled.div`
-display:none;
+  display: none;
 
-@media screen and (max-width:768px){
-    display:block;
-    position:absolute;
-    top:0;
-    right:0;
-    transform:translate(-100%, 60%);
-    font-size:1.8rem;
-    cursor:pointer;
-    color:white;
-}
-`
-
+  @media screen and (max-width: 768px) {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: black;
+  }
+`;
 
 export const NavMenu = styled.ul`
-display:flex;
-align-items:center;
-list-style:none;
-text-align:center;
-margin-right:-22px;
+  display: flex;
+  align-items:center;
+  list-style: none;
+  text-align: center;
+  /* margin-right: -300px; */
 
-@media screen and (max-width:768px) {
-    display:none;
-
-}
-
-
-`
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+`;
 
 export const NavItems = styled.li`
-height:80px;
-`
+  height: 80px;
 
+`;
 
 export const NavLinks = styled(LinkS)`
-color: #fff;
-display:flex;
-align-items:center;
-text-decoration: none;
-padding: 0 1rem;
-height:100%;
-cursor: pointer;
+  color: #000;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  height: 100%;
+  cursor: pointer;
 
-&.active{
-    border-bottom: 3px solid #01Bf71
-}
+  &.active {
+    border-bottom: 3px solid #01bf71;
+  }
+  &:hover {
+    border-bottom: 3px solid #01bf71;
+    transition: 0.2 ease-in-out;
+  }
+`;
 
-`
+export const NavRoute = styled(LinkR)`
+   /* color: ${({ scrollNav }) => (scrollNav ? "#fff" : "#000")}; */
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  height: 100%;
+  cursor: pointer;
 
-
- 
+  &.active {
+    border-bottom: 3px solid #01bf71;
+  }
+  &:hover {
+    border-bottom: 3px solid #01bf71;
+    transition: 0.2 ease-in-out;
+  }
+`;

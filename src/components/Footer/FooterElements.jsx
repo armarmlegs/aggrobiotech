@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 export const FooterContainer = styled.footer`
 background-color:#101522;
+
 `
 
 export const FooterWrapper = styled.div`
@@ -11,6 +12,7 @@ display:flex;
 flex-direction:column;
 justify-content:center;
 align-items:center;
+
 max-width:1100px;
 margin: 0 auto;
 
@@ -94,6 +96,10 @@ export const SocialLogo = styled(Link)`
     margin-bottom:16px;
     font-weight:bold;
 
+    &:hover {
+    color:#01BF71;
+    transition: 0.3s ease-in-out
+}
 
 `
 
@@ -113,4 +119,11 @@ width:240px;`
 
 export const SocialIconLink = styled.a`
 color:#FFF;
-font-size:24px`;
+font-size:24px;
+
+&:hover {
+    color:#01BF71;
+    transition: 0.3s ease-in-out
+}`;
+
+

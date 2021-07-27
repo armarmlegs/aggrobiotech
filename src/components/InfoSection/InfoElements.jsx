@@ -12,7 +12,7 @@ export const InfoContainer = styled.div`
 export const InfoWrapper = styled.div`
   display: grid;
   z-index: 1;
-  height: 800px;
+  height: 900px;
   width: 100%;
   max-width: 1100px;
   margin-right: auto;
@@ -90,17 +90,23 @@ export const BtnWrap = styled.div`
 
   display: flex;
   justify-content: flex-start;
+  color:red;
 `;
 
 export const ImgWrap = styled.div`
 
   max-width: 555px;
-  height: 100%;
+  height: 80%;
+
+ 
 `;
 
 export const Img = styled.img`
   width: 100%;
   margin: 0 0 10px 0;
-  padding-right: 0px;
+  padding-right: 0;
   /* border:1px solid white; */
+  @media screen and (max-width: 768px){
+    width:70%;
+  }
 `;

@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
+
 import {
   FooterContainer,
   FooterWrapper,
@@ -21,7 +22,6 @@ const Footer = () => {
     <FooterContainer>
       <FooterWrapper>
         <FooterLinksContainer>
-          
           <FooterLinksWrapper>
             <FooterLinkItems>
               <FooterLinkTitle> Categories</FooterLinkTitle>
@@ -47,27 +47,39 @@ const Footer = () => {
         </FooterLinksContainer>
         <SocialMedia>
           <SocialMediaWrapper>
-            <SocialLogo to="/">wassup</SocialLogo>
+            <SocialLogo to="/">AgroBiotech</SocialLogo>
             <WebsiteRights>
-              Haters © {new Date().getFullYear()} All RIGHTS RESERVED
+              Wassup Haters © {new Date().getFullYear()} All RIGHTS RESERVED
             </WebsiteRights>
             <SocialIcons>
-                <SocialIconLink href="//www.facebook.com" target="_blank" aria-label="Facebook">
-                    <FaFacebook />
-
-                </SocialIconLink>
-                <SocialIconLink href="//www.instagram.com" target="_blank" aria-label="Instagram">
-                    <FaInstagram />
-
-                </SocialIconLink>
-                <SocialIconLink href="//www.youtube.com" target="_blank" aria-label="Youtube">
-                    <FaYoutube />
-
-                </SocialIconLink>
-                <SocialIconLink href="//www.twitter.com" target="_blank" aria-label="Twitter">
-                    <FaTwitter />
-
-                </SocialIconLink>
+              <SocialIconLink
+                href="//www.facebook.com"
+                target="_blank"
+                aria-label="Facebook"
+              >
+                <FaFacebook />
+              </SocialIconLink>
+              <SocialIconLink
+                href="//www.instagram.com"
+                target="_blank"
+                aria-label="Instagram"
+              >
+                <FaInstagram />
+              </SocialIconLink>
+              <SocialIconLink
+                href="//www.youtube.com"
+                target="_blank"
+                aria-label="Youtube"
+              >
+                <FaYoutube />
+              </SocialIconLink>
+              <SocialIconLink
+                href="//www.twitter.com"
+                target="_blank"
+                aria-label="Twitter"
+              >
+                <FaTwitter />
+              </SocialIconLink>
             </SocialIcons>
           </SocialMediaWrapper>
         </SocialMedia>
