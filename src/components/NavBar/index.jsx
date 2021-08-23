@@ -63,7 +63,7 @@ const Navbar = ({ toggle }) => {
   // }, []);
 
   const changeNav = () => {
-    if (window.scrollY >= 30) {
+    if (window.scrollY >= 70) {
       setScrollNav(true);
     } else {
       setScrollNav(false);
@@ -83,6 +83,8 @@ const Navbar = ({ toggle }) => {
     window.addEventListener("home", toggleHome);
     console.log("droppingbaby");
   }, []);
+
+  
 
   return (
     <div>

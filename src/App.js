@@ -8,7 +8,7 @@ import FoodCrops from "./Pages/FoodCrops";
 import FruitsVeggies from "./Pages/FruitsVeggies";
 import contactForm from "./Pages/contactForm";
 import NinjaScroll from "./components/NinjaScroll"
-import {AnimatePresence} from 'framer-motion'
+
 
 
 const App = () => {
@@ -16,7 +16,7 @@ const App = () => {
     <Router>
       
       <NinjaScroll />
-      <AnimatePresence>
+      
       <Switch>
         <Route path="/" component={Home} exact />
         <Route path="/ComCrops" component={ComCrops} exact />
@@ -24,7 +24,7 @@ const App = () => {
         <Route path="/FruitsVeggies" component={FruitsVeggies} exact />
         <Route path="/ContactForm" component={contactForm} exact />
       </Switch>
-      </AnimatePresence>
+      
     </Router>
   );
 };

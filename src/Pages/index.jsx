@@ -3,6 +3,7 @@ import Sidebar from "../components/SideBar";
 import NavBar from "../components/NavBar";
 import HeroSection from "../components/HeroSection/index";
 import InfoSection from "../components/InfoSection";
+
 import {
   homeObjOne,
   // homeObjThree,
@@ -11,8 +12,7 @@ import {
 } from "../components/InfoSection/Data";
 import Services from "../components/Services";
 import Footer from "../components/Footer";
-import {motion} from 'framer-motion'
-import { animationOne, Animationtwo, transition } from "../components/Animations/Animations";
+
 
 
 const Home = () => {
@@ -22,17 +22,15 @@ const Home = () => {
 
   };
 
-  useEffect(() => {
-    window.addEventListener("home", toggle);
-    console.log("homeclose");
-  }, []);
+  // useEffect(() => {
+  //   window.addEventListener("home", [toggle]);
+  //   console.log("homeclose");
+  // }, []);
 
   return (
     <>
-     <motion.div
-     initial="in" animate="out" end="out"  variants={Animationtwo}
-     transition={transition}
-     >
+    
+    
       <Sidebar isOpen={isOpen} toggle={toggle} />
 
       <NavBar toggle={toggle} />
@@ -49,7 +47,8 @@ const Home = () => {
       
 
       <Footer />
-    </motion.div>
+    {/* </motion.div> */}
+    
     </>
   );
 };

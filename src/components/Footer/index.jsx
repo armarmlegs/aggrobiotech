@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 
 import {
@@ -25,9 +25,9 @@ const Footer = () => {
           <FooterLinksWrapper>
             <FooterLinkItems>
               <FooterLinkTitle> Categories</FooterLinkTitle>
-              <FooterLink to="/">Cultures Commerciales</FooterLink>
-              <FooterLink to="/">Cultures Vivrières</FooterLink>
-              <FooterLink to="/">Fruit et Légumes</FooterLink>
+              <FooterLink to="/ComCrops">Cultures Commerciales</FooterLink>
+              <FooterLink to="//FoodCrops">Cultures Vivrières</FooterLink>
+              <FooterLink to="//FruitsVeggies">Fruit et Légumes</FooterLink>
             </FooterLinkItems>
             <FooterLinkItems>
               <FooterLinkTitle> Social Media</FooterLinkTitle>

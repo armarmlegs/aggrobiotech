@@ -8,8 +8,7 @@ import ProductCards from "../components/ProductCards/ProductCards";
 import { CardData } from "../components/ProductCards/Data";
 import { useState } from "react";
 import Sidebar from '../components/SideBar'
-import { motion } from "framer-motion";
-import { animationOne, Animationtwo, transition } from "../components/Animations/Animations";
+
 
 
 
@@ -21,8 +20,7 @@ const FoodCrops = () => {
 
  
   return (
-    <motion.div
-    initial="in" animate="out" exit="end"  variants={Animationtwo} transition={transition}>
+   
     <div>
     <Sidebar isOpen={isOpen} toggle={toggle} />
         <NavBar toggle={toggle}/>
@@ -35,7 +33,7 @@ const FoodCrops = () => {
       
      
     </div>
-    </motion.div>
+  
   );
 };
 

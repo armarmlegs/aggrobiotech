@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Link as LinkR } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
 export const Nav = styled.nav`
-  background: ${({ scrollNav }) => (scrollNav ? "#000" : "#fff")};
+  background: ${({ scrollNav }) => (scrollNav ? "#01bf71" : "#fff")};
   color:${({ scrollNav }) => (scrollNav ? "#fff" : "#fff")};
   opacity: 0.9;
   height: 70px;

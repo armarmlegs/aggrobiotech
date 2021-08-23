@@ -9,7 +9,7 @@ const SideBar = ({isOpen, toggle}) => {
       </Icon>
       <SidebarWrapper>
         <SidebarMenu>
-          <SidebarLink to="/about" onClick={toggle}>About</SidebarLink>
+          <SidebarLink to="/" onClick={toggle}>About</SidebarLink>
           <SidebarLink to="/ComCrops" onClick={toggle}>Commercial Crops</SidebarLink>
           <SidebarLink to="/FoodCrops" onClick={toggle}>Food Crops</SidebarLink>
           <SidebarLink to="/FruitsVeggies" onClick={toggle}>Fruits & Vegetables</SidebarLink>

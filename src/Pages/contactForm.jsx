@@ -109,8 +109,7 @@ import NavBar from '../components/NavBar'
 import Contact from '../components/contactForm/Contact'
 import Footer from '../components/Footer'
 import SideBar from '../components/SideBar'
-import {motion} from 'framer-motion'
-import { animationOne, Animationtwo, transition } from "../components/Animations/Animations";
+
 
 const ContactForm = () => {
   
@@ -119,17 +118,14 @@ const ContactForm = () => {
     setIsOpen(!isOpen);
   };
 
-  useEffect(() => {
-    window.addEventListener("home", toggle);
-    console.log("homeclose");
-  }, []);
+  // useEffect(() => {
+  //   window.addEventListener("home", toggle);
+  //   console.log("homeclose");
+  // }, []);
 
   return (
-    <motion.div
-    initial="in" animate="out" end="out"  variants={Animationtwo}
-    transition={transition}
-    >
-
+  
+<div>
 <SideBar  isOpen={isOpen} toggle={toggle}/>
 
 <NavBar toggle={toggle} />
@@ -137,10 +133,11 @@ const ContactForm = () => {
 <Contact />
 
 <Footer />
+</div>
 
 
 
-    </motion.div>
+   
   )
 }
 

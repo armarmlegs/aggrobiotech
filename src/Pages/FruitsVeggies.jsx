@@ -6,19 +6,21 @@ import InfoSection from "../components/InfoSection";
 import { homeObjOne } from "../components/InfoSection/Data";
 import ProductCards from "../components/ProductCards/ProductCards";
 import { CardData } from "../components/ProductCards/Data";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Sidebar from "../components/SideBar";
-import { motion } from "framer-motion";
-import { animationOne, Animationtwo, transition } from "../components/Animations/Animations";
+
 
 const FruitsVeggies = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => {
     setIsOpen(!isOpen);
   };
+  // useEffect(() => {
+  //   window.addEventListener("home", [toggle]);
+  //   console.log("homeclose");
+  // }, []);
   return (
-    <motion.div
-    initial="in" animate="out" exit="end"  variants={Animationtwo} transition={transition}>
+   
       <div>
         <Sidebar isOpen={isOpen} toggle={toggle} />
         <NavBar toggle={toggle} />
@@ -28,7 +30,7 @@ const FruitsVeggies = () => {
 
         <Footer />
       </div>
-    </motion.div>
+  
   );
 };
 

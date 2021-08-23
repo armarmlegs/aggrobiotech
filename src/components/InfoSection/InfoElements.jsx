@@ -107,6 +107,9 @@ export const Img = styled.img`
   padding-right: 0;
   /* border:1px solid white; */
   @media screen and (max-width: 768px){
-    width:70%;
+    width:80%;
+    margin-top: 20px;
+    margin-left:auto;
+    margin-right:auto;
   }
 `;
