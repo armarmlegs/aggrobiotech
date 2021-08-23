@@ -13,10 +13,13 @@ export const ServicesContainer = styled.div`
  background-size:cover; */
  @media screen and (max-width: 768px) {
     height: auto;
+    padding-top:70px
+   
   }
 
   @media screen and (max-width: 480px) {
     height:auto;
+    padding-top:70px
   }
 
 
@@ -72,6 +75,9 @@ export const ServicesH1 = styled.h1`
   font-size: 2.5rem;
   font-weight: 10;
   text-transform: uppercase;
+  text-align: center;
+  border-bottom: 1px solid #000;
+  margin-bottom: 25px;
 
   margin-bottom: 64px;
   margin-top: 15px;

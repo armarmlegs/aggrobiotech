@@ -7,7 +7,9 @@ import ComCrops from "./Pages/CommercialCrops";
 import FoodCrops from "./Pages/FoodCrops";
 import FruitsVeggies from "./Pages/FruitsVeggies";
 import contactForm from "./Pages/contactForm";
-import NinjaScroll from "./components/NinjaScroll"
+import NinjaScroll from "./components/NinjaScroll";
+import Services from "./Pages/Services";
+import About from "./Pages/About";
 
 
 
@@ -23,6 +25,8 @@ const App = () => {
         <Route path="/FoodCrops" component={FoodCrops} exact />
         <Route path="/FruitsVeggies" component={FruitsVeggies} exact />
         <Route path="/ContactForm" component={contactForm} exact />
+        <Route path="/Services" component={Services} exact />
+        <Route path="/About" component={About} exact />
       </Switch>
       
     </Router>

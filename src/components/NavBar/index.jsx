@@ -150,7 +150,7 @@ const Navbar = ({ toggle }) => {
                   offset={-20}
                 >
                   {" "}
-                  services{" "}
+                  Services{" "}
                 </NavLinks>
               </NavItems>
               <NavItems>

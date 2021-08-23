@@ -9,11 +9,11 @@ const SideBar = ({isOpen, toggle}) => {
       </Icon>
       <SidebarWrapper>
         <SidebarMenu>
-          <SidebarLink to="/" onClick={toggle}>About</SidebarLink>
+          <SidebarLink to="/About" onClick={toggle}>About</SidebarLink>
           <SidebarLink to="/ComCrops" onClick={toggle}>Commercial Crops</SidebarLink>
           <SidebarLink to="/FoodCrops" onClick={toggle}>Food Crops</SidebarLink>
           <SidebarLink to="/FruitsVeggies" onClick={toggle}>Fruits & Vegetables</SidebarLink>
-          <SidebarLink to="services" onClick={toggle}>Services</SidebarLink>
+          <SidebarLink to="/Services" onClick={toggle}>Services</SidebarLink>
           <SidebarLink to="/ContactForm" onClick={toggle}>Contact Form</SidebarLink>
         </SidebarMenu>
    
