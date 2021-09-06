@@ -22,10 +22,10 @@ const Home = () => {
 
   };
 
-  // useEffect(() => {
-  //   window.addEventListener("home", [toggle]);
-  //   console.log("homeclose");
-  // }, []);
+  useEffect(() => {
+    window.addEventListener("home", [toggle]);
+    console.log("homeclose");
+  }, []);
 
   return (
     <>

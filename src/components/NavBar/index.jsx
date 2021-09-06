@@ -94,8 +94,8 @@ const Navbar = ({ toggle }) => {
             <NavLogo to="/" onClick={toggleHome}>
               AgroBiotech
             </NavLogo>
-            <MobileIcon>
-              <FaBars onClick={toggle} />
+            <MobileIcon onClick={toggle}>
+              <FaBars  />
             </MobileIcon>
             <NavMenu>
               <NavItems>
@@ -105,7 +105,7 @@ const Navbar = ({ toggle }) => {
                   duration={500}
                   // spy={"true"}
                   exact="true"
-                  offset={-20}
+                  // offset={-20}
                   activeClass="active"
                 >
                   {" "}
@@ -147,7 +147,7 @@ const Navbar = ({ toggle }) => {
                   duration={500}
                   // spy={true}
                   exact="true"
-                  offset={-20}
+                  // offset={-20}
                 >
                   {" "}
                   Services{" "}
